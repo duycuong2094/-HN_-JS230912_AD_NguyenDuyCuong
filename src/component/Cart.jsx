@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 function Cart(props) {
   const [total, setTotal] = useState(0);
-
+  function formatCurrency(amount) {
+    return amount.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    });
+  }
   useEffect(() => {
     let a = 0;
     for (let i = 0; i < props.cart.length; i++) {
@@ -21,7 +26,7 @@ function Cart(props) {
           <span>{item.name}</span> <span>{item.quatity}</span>
         </div>
       ))}
-      <h1>Total: {total}</h1>
+      <h2>Total: {formatCurrency(total)}</h2>
     </div>
   );
 }
