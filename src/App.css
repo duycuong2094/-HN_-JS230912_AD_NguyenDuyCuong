@@ -1,0 +1,69 @@
+.listProduct{
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+.product{
+  width: 21%;
+  height: 385px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 10%;
+
+}
+body{
+  background-color: rgba(142, 142, 111, 0.447);
+  text-align: center;
+}
+img{
+width: 100%;
+height:300px;
+}
+.nameProduct{
+  width: 90%;
+  margin-left: 5%;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+
+}
+.addProduct{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  color: red;
+  align-items: center;
+}
+button{
+  width: 30%;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: brown;
+  border: none;
+  border-radius: 10px;
+} 
+button:hover{
+  background-color: white;
+  color: brown;
+}
+.cartProduct{
+  width: 60%;
+  margin-left: 20%;
+  font-size: 25px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+  
+}
+.cartProduct:nth-child(even){
+background-color: rgb(178, 171, 171);
+}
+.cartProduct:nth-child(odd){
+  background-color: rgb(102, 99, 99);
+  }
